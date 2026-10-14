@@ -28,9 +28,9 @@ public class Title_BallCtrl : MonoBehaviour
         if (this.transform.position.y < -6)
         {
             this.transform.position = startpos;
-            rb2d.velocity = Vector2.zero;
+            rb2d.linearVelocity = Vector2.zero;
             rb2d.angularVelocity = 0f;
-            Debug.Log(rb2d.velocity);
+            Debug.Log(rb2d.linearVelocity);
         }
     }
 }
